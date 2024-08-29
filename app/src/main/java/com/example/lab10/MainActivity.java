@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         params1.setMargins(0, 30, 0, 0);
         params1.gravity = Gravity.CENTER;
         imageView1.setLayoutParams(params1);
-        imageView1.setImageResource(R.drawable.banana);
+        imageView1.setImageResource(R.drawable.es);
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, fruit_detail.class);
-                intent.putExtra("fruitName", "กล้วย");
+                intent.putExtra("fruitName", "ชื่อเล่น : เอส");
                 // Lab 09 - send img id to the next page
-                intent.putExtra("fruitImg", "banana");
+                intent.putExtra("fruitImg", "es");
                 startActivity(intent);
             }
         });
